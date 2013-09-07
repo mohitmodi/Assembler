@@ -1,0 +1,52 @@
+commands:
+
+1) add 
+	add register register entry
+	add with carry
+	add immediate value
+	add indirect (using base + offset)
+	
+2) subtract
+	subtract register register entry
+	subtract with borrow
+	subtract immediate value
+	subtract indirect (using base + offset)
+	
+3) mov
+	move register register entry
+	move immediate value
+	move indirect (using base + offset)
+	
+4) Jump
+	unconditional jump (on direct address)
+	
+machine specifications :
+
+16 Registers - 0 to F
+5 flags : zero, carry, sign, parity, overflow
+address space 16 bit : 0000H to FFFFH
+data length - 16 bit word addressable
+offset - 12 bit
+immediate value - 16 bit
+
+4 addressing modes : 
+	0 - register - register
+	1 - immediate
+	2 - base + offset
+	
+14 instruction : 
+	0 - add
+	1 - add with carry
+	2 - subtract
+	3 - subtract with borrow
+	4 - move
+	5 - jump unconditional
+	6 - jump on zero
+	7 - jump on non zero
+	8 - jump on carry
+	9 - jump on non carry
+	A - jump on positive
+	B - jump on negative
+	C - jump on even parity
+	D - jump on odd parity
+	

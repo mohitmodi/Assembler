@@ -1,0 +1,8 @@
+SAMPL1 START
+; STARTING OF PROGRAM
+______ SBASE x2
+______ MOVLD x9 =x1602
+______ MOVLD xA =x0802
+______ MOVLD xB =x1704
+______ SGEND
+
